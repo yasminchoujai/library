@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+h1{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+
+}
+ .author {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    margin-bottom: 15px;
+
+}
+.book{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    margin-bottom: 15px;
+
+}
+.status{
+    padding: 10px;
+    border-radius: 10px;  
+      margin-left: 10px;
+
+}
+.read{
+    padding: 15px;
+}
+.unread{
+    padding: 15px;
+}
+.submit{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    margin-left: 10px;
+
+}
