@@ -4,45 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="library.css">
-    <title>library</title>
+    <title>Library</title>
 </head>
 <body>
-    <h1>My book library</h1>
+<div class="container">
+    <button class="newbook" id="newbook">New Book</button>
 
-    <div class="addnewbook">
-    <label for="book">Book</label><br>
-    <input type="text" id="book" class="book"><br>
-    <label for="author">Author</label><br>
-    <input type="text" id="author" class="author">
-    <select name="status" id="status" class="status">
-    <option value="read" class="read">Read</option>
-    <option value="unread" class="unread">Unread</option>
-    </select>
-<button class="submit" id="submit">Submit</button>
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <h1>My Book Library</h1>
+            <form id="newBookForm">
+                <div class="addnewbook">
+                    <label for="book">Book</label><br>
+                    <input type="text" id="book" class="book" required><br>
+                    <label for="author">Author</label><br>
+                    <input type="text" id="author" class="author" required><br>
+                    <label for="status">Status</label><br>
+                    <select name="status" id="status" class="status">
+                        <option value="read" class="read">Read</option>
+                        <option value="not read" class="unread">Unread</option>
+                    </select>
+                    <button type="submit" class="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
+
     <div class="table">
-
         <table>
-        
-            <tr>
-            <th>Name</th>
-            <th>Author</th>
-            <th>Status</th>
-            <th></th>
-            </tr>
-            <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-
-
-            </tr>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="librarySection">
+                <!-- Book entries will be added here -->
+            </tbody>
         </table>
-
-
-
-
     </div>
-   <script src="library.js"></script> 
+</div>
+<script src="library.js"></script>
 </body>
 </html>
